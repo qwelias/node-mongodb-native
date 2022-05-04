@@ -268,7 +268,7 @@ export interface MongoClientPrivate {
   sessions: Set<ClientSession>;
   bsonOptions: BSONSerializeOptions;
   namespace: MongoDBNamespace;
-  readonly options?: MongoOptions;
+  readonly options: MongoOptions;
   readonly readConcern?: ReadConcern;
   readonly writeConcern?: WriteConcern;
   readonly readPreference: ReadPreference;
